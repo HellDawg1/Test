@@ -22,13 +22,16 @@
         </div>
       </div>
       <hr />
+      <!-- The search bar functionality is not -->
       <div class="row">
         <div class="input-group col-lg-12">
           <input
+          #searchbar
             type="text"
             class="form-control"
             placeholder="Search"
             aria-label="Dollar amount (with dot and two decimal places)"
+            (keydown.enter)="searchName(searchbar.value)"
           />
           <div class="input-group-append">
             <span class="input-group-text">

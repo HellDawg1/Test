@@ -8,7 +8,10 @@
         <p>{{ contact.name }}</p>
         <p class="text-muted pad">{{ contact.job }}</p>
       </div>
+
       <div>
+        <!--The Message button will open a modal containing of username
+      and a textbox to send the message-->
         <button class="btn btn-primary py-1 mr-1 text-center">
           <fa-icon
             style="color: aliceblue, margin-top 20px"
@@ -16,6 +19,8 @@
           ></fa-icon>
           <span>Messages</span>
         </button>
+        <!--The Phone button will open an external link to a phone application
+        or any URL as per the requirements-->
         <button class="btn btn-light py-1 mr-1">
           <fa-icon class="fa-regular" [icon]="phone"></fa-icon>
         </button>
@@ -32,16 +37,17 @@
     <p class="text-muted mx-5">Bio</p>
     <p class="text mx-5">{{ contact.bio }}</p>
   </div>
+  <!--External Email application opens upon click and automatically fills in the reciepient email-->
   <div class="flex row col-lg-12 mx-5">
     <div class="flex row justify-content-between col-lg-12">
       <div class="flex row">
         <p class="text-muted mx-5">Email</p>
-        <div>
-          <p class="text mx-5">{{ contact.email }}</p>
-          <p class="text mx-5">{{ contact.email }}</p>
+        <div class="email">
+          <p class="text mx-5" (click)="sendEmail(contact.email)">{{ contact.email }}</p>
+          <p class="text mx-5" (click)="sendEmail(contact.email1)">{{ contact.email1 }}</p>
         </div>
       </div>
-      <div><button class="btn btn-light mr-5">Primary</button></div>
+      <div><button [disabled]=true class="btn btn-light mr-5">Primary</button></div>
     </div>
   </div>
   <div class="flex row col-lg-12 mx-5 my-3 flex-end">
@@ -50,9 +56,10 @@
       {{ contact.dial }}
     </p>
   </div>
-  <div class="flex row col-lg-12 mx-3 flex-end">
+  <!--Link is opened upon click-->
+  <div class="flex row col-lg-12 mx-3 flex-end" >
     <p class="text-muted flex-start mx-5">Meeting</p>
-    <p class="text mx-5">
+    <p class="text mx-5" (click)="goToLink(contact.meeting)" class="meeting">
       {{ contact.meeting }}
     </p>
   </div>
@@ -65,7 +72,7 @@
           <p class="text mx-5">{{ contact.phone1 }}</p>
         </div>
       </div>
-      <div><button class="btn btn-light mr-5">Primary</button></div>
+      <div><button [disabled]=true class="btn btn-light mr-5">Primary</button></div>
     </div>
   </div>
   <div class="flex row col-lg-12 mx-5 flex-end">

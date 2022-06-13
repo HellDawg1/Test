@@ -9,3 +9,11 @@ img {
   width: 100px;
   height: 100px;
 }
+.email,.meeting {
+  cursor:pointer
+}
+.btn-light.disabled, .btn-light:disabled {
+  color: red;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}

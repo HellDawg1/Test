@@ -44,4 +44,10 @@ export class ContactDetailsComponent implements OnInit {
       this.contact = this.contacts.find((x) => x.id == this.contactId);
     });
   }
+  goToLink(url: string){
+    window.open(url,"_blank")
+  }
+  sendEmail(email: string){
+    document.location = "mailto:"+email;
+  }
 }
