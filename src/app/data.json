@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Johanna Stevens",
+    "job": "Project Manager",
+    "email": "Johannastevens@gmail.com",
+    "email1": "stevens@gmail.com",
+    "dial": "nstevensn@msg.com",
+    "meeting": "http://go.betacall/meet/j.stevens",
+    "phone": "439-567-3435",
+    "phone1": "412-587-5364",
+    "image": "../../assets/t-4.jpg",
+    "bio": "I’m a project mananger in Mexico, CA with a passion for computer"
+  },
+  {
+    "id": 2,
+    "name": "Nicholas Gordon",
+    "job": "Developer",
+    "email": "Nicholasgordon@gmail.com",
+    "email1": "Nicholas@gmail.com",
+    "dial": "ngordon@msg.com",
+    "meeting": "http://go.betacall/meet/j.gordon",
+    "phone": "342-245-9898",
+    "phone1": "553-902-2134",
+    "image": "../../assets/t-7.jpg",
+    "bio": "I’m a software engineer in Santa Barbara, CA with a passion for computer"
+  },
+  {
+    "id": 3,
+    "name": "Bradley Malone",
+    "job": "Sales Manager",
+    "email": "bradleymalone@gmail.com",
+    "email1": "malone@gmail.com",
+    "dial": "bardly@msg.com",
+    "meeting": "http://go.betacall/meet/B.malone",
+    "phone": "235-234-7821",
+    "phone1": "213-584-0809",
+    "image": "../../assets/t-3.jpg",
+    "bio": "I’m a sales manager in newyork city, CA with a passion for computer"
+  },
+  {
+    "id": 4,
+    "name": "Fred Haynes",
+    "job": "Support Team",
+    "email": "fredhaynes@gmail.com",
+    "email1": "haynes123@gmail.com",
+    "dial": "Fhaynes@msg.com",
+    "meeting": "http://go.betacall/meet/f.haynes",
+    "phone": "423-412-8932",
+    "phone1": "023-230-9123",
+    "image": "../../assets/t-5.jpg",
+    "bio": "I’m a Support Team in Mexico, CA with a passion for computer"
+  },
+  {
+    "id": 5,
+    "name": "Marven Lambert",
+    "job": "Designer",
+    "email": "marvenlambert@gmail.com",
+    "email1": "lanbert@gmail.com",
+    "dial": "ngordon@msg.com",
+    "meeting": "http://go.betacall/meet/m.lambert",
+    "phone": "546-922-2312",
+    "phone1": "899-123-9023",
+    "image": "../../assets/i-1.jpg",
+    "bio": "I’m a Designer in Santa Barbara, CA with a passion for computer"
+  }
+]

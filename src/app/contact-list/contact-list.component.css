@@ -1,0 +1,12 @@
+.fa-regular {
+  color: gray;
+}
+.pad {
+  margin-top: -16px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  background-color: rgb(226, 238, 245);
+}

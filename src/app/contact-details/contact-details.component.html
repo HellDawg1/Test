@@ -1,0 +1,91 @@
+<div class="row">
+  <div class="flex row px-4 p-3 ml-2 col-lg-12 col-sm-12">
+    <div class="text-center px-4 py-4" style="margin-left: 120px">
+      <img src="{{ contact.image }}" alt="ahmad" />
+    </div>
+    <div>
+      <div style="margin-top: 27px">
+        <p>{{ contact.name }}</p>
+        <p class="text-muted pad">{{ contact.job }}</p>
+      </div>
+      <div>
+        <button class="btn btn-primary py-1 mr-1 text-center">
+          <fa-icon
+            style="color: aliceblue, margin-top 20px"
+            [icon]="messages"
+          ></fa-icon>
+          <span>Messages</span>
+        </button>
+        <button class="btn btn-light py-1 mr-1">
+          <fa-icon class="fa-regular" [icon]="phone"></fa-icon>
+        </button>
+        <button class="btn btn-light py-1 mr-1">
+          <fa-icon class="fa-regular" [icon]="calendar"></fa-icon>
+        </button>
+        <button class="btn btn-light py-1">
+          <fa-icon class="fa-regular" [icon]="menu"></fa-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="flex row col-lg-12 mx-5 my-3 flex-end">
+    <p class="text-muted mx-5">Bio</p>
+    <p class="text mx-5">{{ contact.bio }}</p>
+  </div>
+  <div class="flex row col-lg-12 mx-5">
+    <div class="flex row justify-content-between col-lg-12">
+      <div class="flex row">
+        <p class="text-muted mx-5">Email</p>
+        <div>
+          <p class="text mx-5">{{ contact.email }}</p>
+          <p class="text mx-5">{{ contact.email }}</p>
+        </div>
+      </div>
+      <div><button class="btn btn-light mr-5">Primary</button></div>
+    </div>
+  </div>
+  <div class="flex row col-lg-12 mx-5 my-3 flex-end">
+    <p class="text-muted flex-start mx-5">Dial</p>
+    <p class="text mx-5">
+      {{ contact.dial }}
+    </p>
+  </div>
+  <div class="flex row col-lg-12 mx-3 flex-end">
+    <p class="text-muted flex-start mx-5">Meeting</p>
+    <p class="text mx-5">
+      {{ contact.meeting }}
+    </p>
+  </div>
+  <div class="flex row col-lg-12 mx-5">
+    <div class="flex row justify-content-between col-lg-12">
+      <div class="flex row">
+        <p class="text-muted mx-5">Phone</p>
+        <div>
+          <p class="text mx-5">{{ contact.phone }}</p>
+          <p class="text mx-5">{{ contact.phone1 }}</p>
+        </div>
+      </div>
+      <div><button class="btn btn-light mr-5">Primary</button></div>
+    </div>
+  </div>
+  <div class="flex row col-lg-12 mx-5 flex-end">
+    <p class="text-muted flex-start mx-5">Social</p>
+    <div>
+      <button class="btn btn-light mr-1">
+        <fa-icon class="fa-regular" [icon]="facebook"></fa-icon>
+      </button>
+      <button class="btn btn-light mr-1">
+        <fa-icon class="fa-regular" [icon]="twitter"></fa-icon>
+      </button>
+      <button class="btn btn-light mr-1">
+        <fa-icon class="fa-regular" [icon]="pin"></fa-icon>
+      </button>
+      <button class="btn btn-light">
+        <fa-icon class="fa-regular" [icon]="linked"></fa-icon>
+      </button>
+      <button class="btn btn-light">
+        <fa-icon class="fa-regular" [icon]="google"></fa-icon>
+      </button>
+    </div>
+  </div>
+</div>

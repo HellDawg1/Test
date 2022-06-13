@@ -1,0 +1,79 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 col-lg-4 col-md-4 card">
+      <div class="flex row justify-content-between align-center">
+        <div class="flex row">
+          <div class="px-4 py-3">
+            <button class="btn btn-light">
+              <fa-icon class="fa-regular" [icon]="bars"></fa-icon>
+            </button>
+          </div>
+          <div>
+            <h2 class="p-3">Contacts</h2>
+          </div>
+        </div>
+        <div class="py-3">
+          <button class="btn btn-light">
+            <fa-icon class="fa-regular" [icon]="left"></fa-icon>
+          </button>
+          <button class="btn btn-light mx-2">
+            <fa-icon class="fa-regular" [icon]="right"></fa-icon>
+          </button>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="input-group col-lg-12">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search"
+            aria-label="Dollar amount (with dot and two decimal places)"
+          />
+          <div class="input-group-append">
+            <span class="input-group-text">
+              <fa-icon class="fa-regular" [icon]="search"></fa-icon
+            ></span>
+          </div>
+        </div>
+        <div
+          class="flex row ml-2 align-center"
+          *ngFor="let contact of contacts"
+        >
+          <a [routerLink]="[contact.id]" class="hover">
+            <div class="flex row px-2 p-3 ml-2 align-center">
+              <div class="text-center px-2">
+                <img
+                  src="{{ contact.image }}"
+                  width="40px"
+                  height="40px"
+                  class="rounded"
+                  alt="ahmad"
+                />
+              </div>
+              <div class="mr-5 float-right">
+                <p>{{ contact.name }}</p>
+                <p class="text-muted pad">{{ contact.job }}</p>
+              </div>
+
+              <div class="ml-5 mr-2 float-left">
+                <button class="btn btn-light py-1 mr-1">
+                  <fa-icon class="fa-regular" [icon]="messages"></fa-icon>
+                </button>
+                <button class="btn btn-light py-1 mr-1">
+                  <fa-icon class="fa-regular" [icon]="phone"></fa-icon>
+                </button>
+                <button class="btn btn-light py-1">
+                  <fa-icon class="fa-regular" [icon]="menu"></fa-icon>
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-8 col-md-8">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
